@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Calculadora cientifica</title>
-    <link rel='stylesheet' href='main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Casip</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Test de tarea</h1>
-<div>
-    <p>hola a todos</p>
-</div>
+    <div class="calc-container">
+        <input type="text" id="calc-display" disabled>
+        <div class="calc-buttons">
 
-</body>
-</html>
+            <button class="btn-black">ON</button>
+            <button class="btn-black">HOME</button>
+            <button class="btn-black ">></button>
+            <button class="btn-black">▲</button>
+            <button class="btn-black">"</button>
+
+             <button class="btn-black">CFG</button>
+            <button class="btn-black">↩</button>
+            <button class="btn-black">◀</button>
+            <button class="btn-black">OK</button>
+            <button class="btn-black">▶</button>
+           
+               <button class="btn-shift">SHIFT</button>
+            <button class="btn">VAR</button>
+            <button class="btn">f(x)</button>
+            <button class="btn-black">▼</button>
+            <button class="btn ">...</button>
+
+            <button class="btn">x</button>
+            <button class="btn">√</button>
+            <button class="btn">x^</button>
+            <button class="btn">log</button>
+            <button class="btn ">ln</button>
+
+            <button class="btn">Ans</button>
+            <button class="btn">sen</button>
+            <button class="btn">cos</button>
+            <button class="btn">tan</button>
+            <button class="btn">()</button>
+
+            <button onclick="appendnumber('7')">7</button>
+            <button onclick="appendnumber('8')">8</button>
+            <button onclick="appendnumber('9')">9</button>
+            <button onclick="celardisplay()">C</button>
+            <button class="btn">AC</button>
+
+            <button onclick="appendnumber('4')">4</button>
+            <button onclick="appendnumber('5')">5</button>
+            <button onclick="appendnumber('6')">6</button>
+            <button onclick="appendnumber('*')">*</button>
+            <button onclick="appendnumber('/')">/</button>
+
+            <button onclick="appendnumber('1')">1</button>
+            <button onclick="appendnumber('2')">2</button>
+            <button onclick="appendnumber('3')">3</button>
+            <button onclick="appendnumber('+')">+</button>
+            <button onclick="appendnumber('-')">-</button>
+
+            <button onclick="appendnumber('0')">0</button>
+            <button onclick="appendnumber('.')">.</button>
+            <button class="btn">x10ⁿ</button>
+            <button class="btn">FMT</button>
+            <button onclick="calculate()" class="btn">EXE</button>
